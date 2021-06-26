@@ -9,7 +9,7 @@
     font-size: 25px;
     font-weight: bold;
     font-style: italic;  
-    color: rgb(131, 5, 5) !important;  
+    color: white !important;  
 }
 
 .navbar ul{
@@ -25,7 +25,10 @@
     font-size: medium;
 }
 
+.container-fluid{
+    background-color: black;
+}
 
 .navbar ul li a{
-    color: black !important;
+    color:white !important;
 }
