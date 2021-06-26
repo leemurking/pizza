@@ -33,3 +33,29 @@
     color:white !important;
 }
 
+.image2{
+    width: 750px;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.firstp{
+    font-size: large;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.text{
+    font-size: small;
+}
+
+h3{
+    font-size: medium;
+}
+
+/* #firstid{
+    background-color: black;
+} */
