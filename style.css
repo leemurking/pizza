@@ -261,9 +261,24 @@ h6{
     padding: 20px;
 }
 
+.openingh1{
+    color: white;
+    text-align: center;
+}
+
+#about{
+    padding: 40px;
+}
+
 .about1{
     font-size: larger;
     color: white;
     text-align: center;
     font-weight: bolder;
+}
+
+.image5{
+    width: 700px;
+    height: 50vh;
+    object-fit: cover;
 }
