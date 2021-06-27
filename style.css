@@ -44,7 +44,7 @@ p{
 }
 
 .image2{
-    width: 750px;
+    width: 700px;
     height: 60vh;
     object-fit: cover;
 }
@@ -122,8 +122,50 @@ h3{
     transform: rotateY(180deg);
   }
 
+  #welcome{
+      padding: 50px;
+  }
+
+  #firstid{
+      background-color: black;
+      padding: 30px;
+  }
+
+#mmmh{
+    background-image: url(./images/new3.jpg);
+    height: 20vh;
+}
+
+#mmmh2{
+    background-image: url(./images/new.jpeg);
+    height: 20vh;
+}
+
+.newlogo{
+    width: 170px;
+    height: 90px;
+    object-fit: cover;
+}
+
+#mmmh3{
+    background-image: url(./images/new2.jpg);
+    height: 20vh;
+}
+
+.style{
+    color: white;
+    text-align: center;
+}
+
+.style1{
+    color: white;
+    font-weight: bolder;
+}
+
   #services{
       background-image: url(./images/food.png);
+      height: 60vh;
+      padding: 30px;
   }
 
   h1{
