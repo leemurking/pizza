@@ -186,3 +186,35 @@ h3{
 #menu{
     padding: 40px;
 }
+#p1{
+    display: none;
+}
+
+#p2{
+    display: none;
+}
+
+#p3{
+    display: none;
+}
+
+.pricep1{
+    color: white;
+}
+
+.span{
+    color: white;
+}
+
+#pricing{
+    padding: 30px;
+}
+
+h6{
+    color: white;
+    text-align: center;
+}
+
+#row1{
+    padding: 20px;
+}
