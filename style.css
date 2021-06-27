@@ -260,3 +260,10 @@ h6{
 #row1{
     padding: 20px;
 }
+
+.about1{
+    font-size: larger;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
