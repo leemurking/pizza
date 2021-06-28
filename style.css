@@ -376,6 +376,10 @@ textarea {
   line-height: inherit;
 }
 
+#make-order{
+    background-image: url(./images/bg_4.jpg);
+}
+
 button,
 input {
   overflow: visible;
