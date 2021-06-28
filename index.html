@@ -285,7 +285,7 @@
             </div>
     </section>
 
-    <section id="pricing">
+    <!-- <section id="pricing">
       <h2>PRICING</h2>
       <div class="row">
         <div class="col-md-4">
@@ -373,7 +373,117 @@
           <p class="price"><p class="pricep1">Small</p><span class="span">900ksh</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <div class="container-fluid order" id="make-order">
+    <div class="order-overlay">
+      <div class="controls-top text-center" id="Order-now"> 
+        <h2>Order Here</h2>
+      </div>
+      <h2>Order your pizza here and we will deliver it to you at your door step!</h2>
+      <div class="row">
+          <div class="col-sm-5">
+            <form action="">
+                <label for="select">Select Your Flavor</label>
+                <select class="browser-default custom-select custom-select-md mb-3 name">
+                  <!-- <option selected value="choose">Choose your flavor</option> -->
+                  <option value="Chicken Tikka">Chicken Tikka</option>
+                  <option value="PeriPeri Pizza">Chicken Peri-peri Pizza</option>
+                  <option value="Raspberry Dessert Pizza">Meat Delux Pizza</option>
+                  <option value="Chicken Alfredo Pizza">Something Meaty Pizza</option>
+                  <option value="Sunchoke Pizza">Hawaiian Pizza</option>
+                  <option value="Buffalo Chicken Sticks">BBQ Chicken Pizza</option>
+                  <option value="Buffalo Chicken Sticks">Veggie Pizza</option>
+                  <option value="Buffalo Chicken Sticks">Italian Pizza</option>
+                  <option value="Buffalo Chicken Sticks">Spanish Pizza</option>
+                  <option value="Buffalo Chicken Sticks">Peperoni Pizza</option>
+                </select>
+              <label for="select">Select Size</label>
+              <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                <option selected value="0">Select size here</option>
+                <!-- <option value="large">X-Large -- sh. 1900</option> -->
+                <option value="large">Large -- sh. 1300</option>
+                <option value="medium">Medium -- sh. 900</option>
+                <option value="small">Small -- sh. 700</option>
+              </select>
+              <label for="crust">Choose your favorite Crust!</label>
+                <select class="browser-default custom-select custom-select-md mb-3" id="crust">
+                    <option selected value="0">Select your preferred crust!</option>
+                  <option value="Crispy">Crispy -- sh. 200</option>
+                  <option value="Stuffed">Stuffed -- sh. 150</option>
+                  <option value="Gluten-free">Gluten-free-- sh. 180</option>
+                </select>
+              <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Sausage" value="Sausage" name="toppings">
+                  <label class="custom-control-label" for="Sausage">Sausage</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Bacon" value="Bacon" name="toppings">
+                  <label class="custom-control-label" for="Bacon">Bacon</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="Mushrooms" value="Mushrooms" name="toppings">
+                  <label class="custom-control-label" for="Mushrooms">Mushrooms</label>
+                </div>
+                <br><br>
+              <button type="submit" class="btn btn-orange proceed">Proceed</button>
+              
+            </form>
+          </div>
+          <div class="col-sm-7">
+            <div id="information">
+              <p id="information">Your order will be processed and delivered within one hour of placing.</p>
+              <p id="information">Make sure you have the total amout for the order during order delivery delivery.</p>
+              <p id="information">Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
+              <p id="regards">Regards, Management</p>
+            </div>
+            <div class="choise">
+              <h2>Your Order is:</h2>
+              <div id="your-orders">
+                <table class="table table-sm  pizzatable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Size</th>
+                      <th scope="col">Crust</th>
+                      <th scope="col">Topping</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody id="ordersmade">
+                    <tr>
+                      <td id="pizzaname"></td>
+                      <td id="pizzasize"></td>
+                      <td id="pizzacrust"></td>
+                      <td id="pizzatopping"></td>
+                      <td id="totals"></td>
+                    </tr>                  
+                  </tbody>
+                </table>
+                <p id="pizzatotal"></p>
+                <p id="totalbill"></p> 
+                <p id="addedprice">Delivery will cost sh. 150</p>
+                <p id="finallmessage"></p>
+              </div>
+              <button class="btn btn-orange addPizza">Add Pizza</button>
+              <button class="btn btn-orange" id="checkout">Checkout</button>
+              <button class="btn btn-orange deliver">Home delivery?</button>
+            </div>
+            <div class="delivery">
+                <form action="">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Pnone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-orange" id="final-order">Place Order</button>
+                  </div>
+                </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
     <section id="about">
       <div class="row">
@@ -385,6 +495,37 @@
           <p class="about1">They say a picture is worth a thousand words. And what better way to greet your restaurant’s website visitors than with a warm and inviting image that communicates the story of your business.
              Case in point, Grant's Pizza. The opening image that greets website visitors is just begging to be studied. Better yet, it makes you want to visit their restaurant to see this beautiful bar in person.
               If your restaurant has a unique design, highlight it in a prominent position on your </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="row">
+        <div class="col-md-4">
+          <div id="map"></div>
+        </div>
+        <div class="col-md-4">
+          <h5 class="contacth5">Contact us</h5>
+          <form action="#" class="appointment form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name">
+            </div>
+            <div class="form-group">
+              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Send" class="btn btn-primary py-3 px-4">
+            </div>
+          </form>
+        </div>
+        <div class="col-md-4">
+          <h5 class="contacth5">Customer Care</h5>
+          <p class="contactp">Email:jamesgrant964@gmail.com</p>
+          <p class="contactp">Tell: 0100173117</p>
+          <p class="contactp">Phone: +254768114967</p>
         </div>
       </div>
     </section>
