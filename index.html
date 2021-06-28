@@ -412,18 +412,13 @@
     <section id="contact">
       <div class="row">
         <div class="col-md-4">
-          <div id="map" style="width:400px;height:400px;background:grey"></div>  
-          <script>  
-            function myMap() {  
-            var mapOptions = {  
-                center: new google.maps.LatLng(51.5, -0.12),  
-                zoom: 10,  
-                mapTypeId: google.maps.MapTypeId.HYBRID  
-            }  
-            var map = new google.maps.Map(document.getElementById("map"), mapOptions);  
-            }  
-            </script>  
-            <script src="https://www.google.com/search?q=edenville&oq=EDENVILLE&aqs=chrome.0.35i39l2j0j0i20i263j0j69i60l3.2299j0j7&sourceid=chrome&ie=UTF-8#"></script>  
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="350" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=masaai%20mall&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+              </div>
+              <style>.mapouter{position:relative;text-align:right;height:180px;width:350px;}.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:350px;}</style>
+            </div>
         </div>
         <div class="col-md-4">
           <h5 class="contacth5">Contact us</h5>
