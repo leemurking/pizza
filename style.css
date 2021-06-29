@@ -22,6 +22,14 @@ p{
     color: white !important;  
 }
 
+.text-center{
+  color: white;
+}
+
+#order-pizza{
+  color: white;
+}
+
 .navbar ul{
     padding-left: 50%;
     font-weight: 500px;

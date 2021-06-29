@@ -1,7 +1,7 @@
 $(function () {
   $('.summary').hide();
   $('.cdata-overlay').hide();
-  //Get inputs
+  
   $("#checkout").click(function () {
     let flavour = $(".flavour option:selected").val();
     let size = $("#size option:selected").val();
@@ -10,12 +10,12 @@ $(function () {
     let number = $("#number").val();
     console.log(size);
 
-    //Function order
+
     let order = (f, s, c, t, n, total) => {
       return { f, s, c, t, n, total };
     };
 
-    //check price
+
     let price, totalPrice;
     switch (flavour) {
       case flavour = "vegtikka":
@@ -456,14 +456,11 @@ $(function () {
 
     }
 
-    //Execute order function
+    
     let newOrder = order(flavour, size, crust, topping, number, totalPrice);
-    console.log(newOrder); // test func
+    console.log(newOrder); 
 
-    //create a new object
-    // let myOrder = JSON.stringify(JSON.parse(newOrder));
 
-    //Write to the order
     $('.summary').slideDown(2000);
     $('.cdata-overlay').slideUp();
     $('#list').slideDown();
@@ -479,7 +476,7 @@ $(function () {
       + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
   });
 
-  //Deliver
+  
   $(".deliver").click(function () {
     $('.summary').slideUp();
     $('#list').slideUp();
@@ -490,12 +487,12 @@ $(function () {
   });
 
 
-  //Pick Up
+
   $(".delivernot").click(function () {
 
   });
 
-  //Scrollify
+  
   $(function () {
     $.scrollify.move('#sum-order');
   });
